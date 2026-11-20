@@ -1,0 +1,24 @@
+2026-11-20 13:03:34 | INFO     | === Inicio de sesión del Sistema Software FJ ===
+2026-11-20 13:03:34 | INFO     | Cliente registrado: Cliente [CLI-01] Laura Gómez | Doc: 10203040 | Email: laura.gomez@correo.com
+2026-11-20 13:03:34 | ERROR    | Error al registrar cliente 'Carlos Ruiz' -> [ErrorDatosInvalidos] El correo 'correo_invalido.com' no tiene un formato válido.
+2026-11-20 13:03:34 | ERROR    | Error al registrar cliente '' -> [ErrorParametroFaltante] El nombre del cliente es obligatorio.
+2026-11-20 13:03:34 | INFO     | Cliente registrado: Cliente [CLI-04] Andrés Silva | Doc: 80706050 | Email: andres.silva@empresa.co
+2026-11-20 13:03:34 | INFO     | Servicio creado: [Sala] Sala Innovación A (ID: SRV-S01) | Capacidad: 12 pers. | Proyector: Sí | Tarifa/h: $80,000.00 | Estado: Disponible
+2026-11-20 13:03:34 | ERROR    | Error al crear servicio -> [ErrorDatosInvalidos] La tarifa base debe ser un valor numérico mayor que cero.
+2026-11-20 13:03:34 | INFO     | Servicio creado: [Equipo] Laptop Dell Latitude (Cómputo, ID: SRV-E01) | Unidades: 2 | Tarifa/día: $45,000.00 | Estado: Disponible
+2026-11-20 13:03:34 | INFO     | Servicio creado: [Asesoría] Arquitectura Cloud | Área: Nube AWS | Consultor: Ing. Mateo Rojas | Tarifa/h: $150,000.00 | Estado: Disponible
+2026-11-20 13:03:34 | INFO     | Reserva RES-001 CONFIRMADA para Laura Gómez -> Sala Innovación A
+2026-11-20 13:03:34 | INFO     | [Auditoría] Intento de confirmación finalizado para RES-001. Estado actual: CONFIRMADA
+2026-11-20 13:03:34 | INFO     | Reserva RES-001 PROCESADA exitosamente. Total cobrado: $326,655.00
+2026-11-20 13:03:34 | ERROR    | Error al confirmar reserva RES-002 -> [ErrorServicioNoDisponible] El servicio 'Sala Innovación A' no está disponible actualmente.
+2026-11-20 13:03:34 | INFO     | [Auditoría] Intento de confirmación finalizado para RES-002. Estado actual: PENDIENTE
+2026-11-20 13:03:34 | INFO     | Reserva RES-003 CONFIRMADA para Andrés Silva -> Laptop Dell Latitude
+2026-11-20 13:03:34 | INFO     | [Auditoría] Intento de confirmación finalizado para RES-003. Estado actual: CONFIRMADA
+2026-11-20 13:03:34 | ERROR    | Fallo al procesar cobro de reserva RES-003 -> [ErrorCalculoInconsistente] El descuento permitido debe estar entre 0% (0.0) y 60% (0.60).
+2026-11-20 13:03:34 | INFO     | Reserva RES-003 PROCESADA exitosamente. Total cobrado: $400,554.00
+2026-11-20 13:03:34 | INFO     | Reserva RES-004 CONFIRMADA para Laura Gómez -> Arquitectura Cloud
+2026-11-20 13:03:34 | INFO     | [Auditoría] Intento de confirmación finalizado para RES-004. Estado actual: CONFIRMADA
+2026-11-20 13:03:34 | WARNING  | Reserva RES-004 fue CANCELADA.
+2026-11-20 13:03:34 | INFO     | [Auditoría] Proceso de cancelación cerrado para RES-004. Estado: CANCELADA
+2026-11-20 13:03:34 | ERROR    | Fallo al procesar cobro de reserva RES-004 -> [ErrorOperacionNoPermitida] Solo se pueden procesar reservas CONFIRMADAS. Estado actual: 'CANCELADA'.
+2026-11-20 13:03:34 | INFO     | === Fin de ejecución controlada del Sistema Software FJ ===
